@@ -14,5 +14,9 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+##echo 'src-git haibo https://github.com/haiibo/openwrt-packages' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
 echo 'src-git haibo https://github.com/haiibo/openwrt-packages' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwall https://op.supes.top/packages/x86_64' >>feeds.conf.default
