@@ -11,12 +11,9 @@
 #
 
 # Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-##echo 'src-git haibo https://github.com/haiibo/openwrt-packages' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
-echo 'src-git haibo https://github.com/haiibo/openwrt-packages' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git https://op.supes.top/packages/x86_64' >>feeds.conf.default
+echo 'src-git haibo https://github.com/haiibo/openwrt-packages' >>feeds.conf.default
