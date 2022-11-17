@@ -25,7 +25,7 @@ echo 'src-git passwall2 https://github.com/haiibo/openwrt-packages/tree/master/l
 #sed -i '/CYXluq4wUazHjmCDBCqXF/d' "${ZZZ_PATH}"
 
 # 删除默认防火墙
-#sed -i '/to-ports 53/d' "${ZZZ_PATH}"
+sed -i '/to-ports 53/d' "${ZZZ_PATH}"
 
 # 取消路由器每天跑分任务
-#sed -i "/exit 0/i\sed -i '/coremark/d' /etc/crontabs/root" "${FIN_PATH}"
+sed -i "/exit 0/i\sed -i '/coremark/d' /etc/crontabs/root" "${FIN_PATH}"
