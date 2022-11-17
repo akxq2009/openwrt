@@ -13,7 +13,9 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.88/g' package/base-files/files/bin/config_generate
 
-git clone https://github.com/haiibo/openwrt-packages package/openwrt-packages
+sed -i '1i src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+
+#git clone https://github.com/haiibo/openwrt-packages package/openwrt-packages
 
 
 # 设置首次登录后台密码为空（进入openwrt后自行修改密码）
