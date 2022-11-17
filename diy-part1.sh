@@ -16,10 +16,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 echo 'src-git helloworld https://github.com/haiibo/openwrt-packages/tree/master/helloworld' >> "feeds.conf.default"
 echo 'src-git passwall https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall' >>feeds.conf.default
 echo 'src-git passwall2 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall2' >>feeds.conf.default
-echo 'src-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon' >>feeds.conf.default
-#argon主题
-rm -rf package/lean/luci-theme-argon/
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+echo 'src-git argon https://github.com/haiibo/openwrt-packages/tree/master/luci-theme-argon' >>feeds.conf.default
 
 # 设置首次登录后台密码为空（进入openwrt后自行修改密码）
 #sed -i '/CYXluq4wUazHjmCDBCqXF/d' "${ZZZ_PATH}"
