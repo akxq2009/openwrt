@@ -13,9 +13,9 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo "src-git helloworld https://github.com/haiibo/openwrt-packages/tree/master/helloworld.git" >> "feeds.conf.default"
-echo 'src-git passwall https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall.git' >>feeds.conf.default
-echo 'src-git passwall2 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall2.git' >>feeds.conf.default
+echo "src-git helloworld https://github.com/haiibo/openwrt-packages/tree/master/helloworld" >> "feeds.conf.default"
+echo 'src-git passwall https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall' >>feeds.conf.default
+echo 'src-git passwall2 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-passwall2' >>feeds.conf.default
 
 #argon主题
 #rm -rf package/lean/luci-theme-argon/
