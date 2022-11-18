@@ -94,7 +94,7 @@ jobs:
       run: |
         cd openwrt
         make defconfig
-        make download -j64
+        make download -j6
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
