@@ -19,4 +19,3 @@ git clone https://github.com/kenzok8/small-package package/small-package
 
 git clone https://github.com/kiddin9/openwrt-packages package/openwrt-packages
 
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
